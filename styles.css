@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #A033FF, #327DFF, #23D5C4);
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-center {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-center a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-signup {
+    background-color: #A033FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-login {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-primary {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-secondary {
+    background-color: #0d5c63;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-center, .navbar-right {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
